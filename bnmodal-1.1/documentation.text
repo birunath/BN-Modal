@@ -45,8 +45,8 @@ Step 6:
   Example:
     <script src="bnmodal-1.1.min.js"></script>
     <script>
-      bnmodal_init('demo1', 'btn1');
-      bnmodal_init('demo2', 'btn2');
+      bmodal_init('demo1', 'btn1');
+      bmodal_init('demo2', 'btn2');
     </script>
 
   And you are done.

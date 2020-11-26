@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BN-Modal 1.1</title>
+  <link rel="stylesheet" type="text/css" href="bnmodal-1.1.min.css" />
+</head>
+
+<body>
+  <button id='btn1'>Show demo123</button>
+  <div class="bmodal bmodal-middle" id="demo1">
+    <div class="bmodal-header">
+      Modal head 123
+    </div>
+    <div class="bmodal-body">
+      Modal body 123
+    </div>
+    <div class="bmodal-footer">
+      Modal footer 123
+    </div>
+  </div>
+
+  <script src="bnmodal-1.1.min.js"></script>
+
+  <script>
+    bmodal_init('demo1', 'btn1');
+  </script>
+</body>
+
+</html>

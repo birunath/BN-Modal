@@ -1,1 +1,78 @@
+# BN-Modal
+
+Created by: Birupaksh Nath
+Usng this liteweight plugin you can show Modals (both Static and Dynamic) very easily.
+
+
+
+How to use:
+===========
+Step 1:
+  Include the CSS file (bnmodal-1.1.min.css) inside the head section of your page. You can add the CDN link easily.
+  <link rel="stylesheet" type="text/css" href="bnmodal-1.1.min.css" />
+
+
+Step 2:
+  Include the BN-Modal JS file (bnmodal-1.1.min.js) before the closing body tag of your page. You can add the CDN link easily.
+  <script src="bnmodal-1.1.min.js"></script>
+
+
+Step 3: Create any element clicking which your modal should pop up. Give it an id.
+  Suppose we create a button:
+    <button id='btn1'>Show demo1</button>
+
+
+Step 4: Create a div with class name = bmodal. Give it an id.
+  Suppose:
+    <div class="bmodal" id="demo1"></div>
+
+
+Step 5: To add contents to the div create a dive with class name = 'bmodal-body' inside the div created in the step2 and write there.
+  Example:
+    <div class="bmodal-body">
+      Modal body 1
+    </div>
+
+
+Step 6:
+  Initiate the BN-Modals by calling the function after the BN-Modal JS file in your page.
+  
+  Syntax:
+    <script>
+      bnmodal_init('Modal_Id', 'Opener_Id');
+    </script>
+    
+  Example:
+    <script src="bnmodal-1.1.min.js"></script>
+    <script>
+      bnmodal_init('demo1', 'btn1');
+      bnmodal_init('demo2', 'btn2');
+    </script>
+
+  And you are done.
+
+
+
+
+* Additional Features:
+====================
+1) If you want to add header and footer to the modal, you can add two classes named 'bmodal-header' and 'bmodal-footer' inside the 'bmodal' class and write inside.
+
+2) If you want the modal to pop up in the middle of the window then add another class named as 'bmodal-middle' to the div with class name 'bmodal'.
+
+
+HTML example:
+======================
+<button id='btn123'>Show demo123</button>
+<div class="bmodal bmodal-middle" id="demo123">
+  <div class="bmodal-header">
+    Modal head 123
+  </div>
+  <div class="bmodal-body">
+    Modal body 123
+  </div>
+  <div class="bmodal-footer">
+    Modal footer 123
+  </div>
+</div>
 
